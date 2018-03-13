@@ -40,6 +40,7 @@
 
 					<div class="form-group">
 						<button type="submit" class="btn btn-success">Kreiraj Pacijenta</button>
+						<a href="{{ route('patients.index') }}" class="btn btn-warning">Odustani</a>
 					</div>
 				</form>
 			</div>

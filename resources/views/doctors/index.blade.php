@@ -25,7 +25,6 @@
 								<td>{{ $d->specialty }}</td>
 								<td class="text-right">
 									<a href="{{ route('doctors.show', $d->id) }}" class="btn btn-info btn-sm">Detalji</a>
-									<a href="{{ route('doctors.edit', $d->id) }}" class="btn btn-warning btn-sm">Edit</a>
 								</td>
 							</tr>
 						@endforeach

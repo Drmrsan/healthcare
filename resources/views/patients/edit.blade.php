@@ -33,15 +33,16 @@
 					<div class="form-group">
 						<label for="doctor">Izaberi doktora:</label>
 						<select name="doctor_id" id="doctor_id" class="form-control">
+							<option value="{{ $patient->doctor->id }}" selected>{{ $patient->doctor->first_name }} {{ $patient->doctor->last_name }}</option>
 							@foreach ($doctors as $d)
-								<option value="{{ $patient->doctor->id }}">{{ $patient->doctor->first_name }} {{ $patient->doctor->last_name }}</option>
+								<option value="{{ $d->id }}">{{ $d->first_name }} {{ $d->last_name }}</option>
 							@endforeach
 						</select>
 					</div>
 
 					<div class="form-group">
 						<button type="submit" class="btn btn-success">Promeni podatke</button>
-						<a href="{{ route('patients.show', $patient->id) }}" class="btn btn-warning">Cancel</a>
+						<a href="{{ route('patients.show', $patient->id) }}" class="btn btn-warning">Odustani</a>
 					</div>
 				</form>
 			</div>

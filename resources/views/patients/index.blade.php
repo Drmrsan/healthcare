@@ -28,7 +28,6 @@
 								<td>{{ $p->doctor->first_name }} {{ $p->doctor->last_name }}</td>
 								<td class="text-right">
 									<a href="{{ route('patients.show', $p->id) }}" class="btn btn-info btn-sm">Detalji</a>
-									<a href="{{ route('patients.edit', $p->id) }}" class="btn btn-warning btn-sm">Edit</a>
 								</td>
 							</tr>
 						@endforeach

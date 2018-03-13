@@ -27,6 +27,7 @@
 
 					<div class="form-group">
 						<button type="submit" class="btn btn-success">Promeni podatke</button>
+						<a href="{{ route('doctors.show', $doctor->id) }}" class="btn btn-warning">Odustani</a>
 					</div>
 				</form>
 			</div>
